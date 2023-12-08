@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -57,4 +58,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "MainActivity::OnDestroy");
     }
 
+    public void onButtonClick(View view) {
+
+    }
 }
