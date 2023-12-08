@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "MainActivity::OnDestroy");
     }
 
-    public void onButtonClick(View view) {
+    public void onButtonClick(View view1) {
 
     }
 }
