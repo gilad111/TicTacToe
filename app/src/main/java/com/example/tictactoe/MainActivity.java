@@ -7,6 +7,10 @@ import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+    String turn;
+    String[][] board;
+    int count;
+
     private static final String TAG = "MainActivity";
 
     @Override
@@ -58,7 +62,18 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "MainActivity::OnDestroy");
     }
 
-    public void onButtonClick(View view1) {
+    public void onButtonClick(View view) {
 
     }
+
+    private void onNewGame() {
+        board = new String[3][3];
+        for (int row=0; row < 3; row++)
+            for (int col=0; col < 3; col++)
+                board[row][col] = new String();
+
+        turn = "X";
+        count = 0;
+    }
+
 }
